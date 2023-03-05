@@ -1,0 +1,7 @@
+route: 
+    -type: tar, pave, ...
+    
+Batiment:
+    -hopital: L l
+    -ecole: L l
+    -village: L l nb

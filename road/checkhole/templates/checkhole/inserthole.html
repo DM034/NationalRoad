@@ -1,0 +1,45 @@
+<form action="/checkhole/vita" method="get">
+    <p>
+        <label for="longitude1">Longitude PK1</label>
+        <input type="text" name="longitude1" id="">
+    </p>
+    <p>
+        <label for="latitude1">Latitude PK1</label>
+        <input type="text" name="latitude1" id="">
+    </p>
+    <p>
+        <label for="longitude2">Longitude PK2</label>
+        <input type="text" name="longitude2" id="">
+    </p>
+    <p>
+        <label for="latitude2">Latitude PK2</label>
+        <input type="text" name="latitude2" id="">
+    </p>
+    <p>
+        <label for="start">PK Start</label>
+        <input type="text" name="start" id="">
+    </p>
+    <p>
+        <label for="end">PK End</label>
+        <input type="text" name="end" id="">
+    </p>
+    <p>
+        <label for="note">Note</label>
+        <input type="text" name="note" id="">
+    </p>
+    <p>
+        <label for="largeur">Largeur</label>
+        <input type="text" name="largeur" id="">
+    </p>
+    <p>
+        <label for="road">Road</label>
+        <select name="road" id="">
+            {%for road in roadhole%}
+            <option value="{{road.0}}">{{road.1}}</option>
+            {%endfor%}
+        </select>
+    </p>
+    <p>
+        <input type="submit" value="Valider">
+    </p>
+</form>

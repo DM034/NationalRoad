@@ -1,0 +1,20 @@
+<table border=1>
+    <tr>
+        <th>ID hole</th>
+        <th>Nom</th>
+        <th>Prix</th>
+        <th>Volume</th>
+        <th>Duree</th>
+
+    </tr>
+    {%for li in road%}
+        <tr>
+            <td>{{li.0}}</td>
+            <td>{{li.1}}</td>
+            <td>{{li.2}}</td>
+            <td>{{li.3}}</td>
+            <td>{{li.4}}</td>
+
+        </tr>
+    {%endfor%}
+</table>

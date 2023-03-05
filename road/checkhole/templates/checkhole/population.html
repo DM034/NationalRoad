@@ -1,0 +1,15 @@
+<table border=1>
+    <tr>
+        <th>ID ROAD</th>
+        <th>NOM ROAD</th>
+        <th>Nb POPULATION</th>
+
+    </tr>
+    {%for li in population%}
+        <tr>
+            <td>{{li.0}}</td>
+            <td>{{li.1}}</td>
+            <td>{{li.2}}</td>
+        </tr>
+    {%endfor%}
+</table>

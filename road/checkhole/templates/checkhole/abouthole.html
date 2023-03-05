@@ -1,0 +1,23 @@
+<table border=1>
+    <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Prix</th>
+        <th>Volume</th>
+        <th>Duree</th>
+
+    </tr>
+    {%for road in roadhole%}
+        <tr>
+            <td>{{road.0}}</td>
+            <td>{{road.1}}</td>
+            <td>{{road.2}}</td>
+            <td>{{road.3}}</td>
+            <td>{{road.4}}</td>
+
+        </tr>
+    {% endfor %}
+</table>
+<a href="/checkhole/insertdistpop">Population</a>
+<a href="/checkhole/insertdisthop">Hopital</a>
+<a href="/checkhole/insertdistec">Ecole</a>
